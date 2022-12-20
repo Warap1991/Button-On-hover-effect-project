@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button On Hover Effect</title>
+    <style>
+        *{font-family: sans-serif;}
+        body{
+            background-color: rgb(1, 10, 10);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25%;
+        }
+        button{
+            position: relative;
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            font-weight: bold;
+            border: 2px solid #ff3758;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            overflow: hidden;
+            text-transform: uppercase;
+            border-radius: 5px;
+        }
+        span{
+            background: #ff3758;
+            height: 100%;
+            width: 0;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 1s;
+        }
+        button:hover span{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <button type="button">TCHAMASSE Warapisse<span></span></button>
+</body>
+</html>
